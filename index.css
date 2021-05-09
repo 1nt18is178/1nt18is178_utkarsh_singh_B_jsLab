@@ -1,0 +1,42 @@
+.b1 {
+    border: 5px solid rebeccapurple;
+    background-color: rgb(72, 110, 11);
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+  }
+
+  .b2 {
+    border: 5px solid rebeccapurple;
+    background-color: rgb(18, 180, 86);
+    padding: 40px;
+    margin: 40px;
+    width: 150px;
+    height: 75px;
+  }
+
+  .b3 {
+    border: 5px solid rebeccapurple;
+    background-color: rgb(38, 137, 184);
+    padding: 40px;
+    margin: 40px;
+    width: 100px;
+    height: 50px;
+  }
+  .b4 {
+    border: 5px solid rebeccapurple;
+    background-color: rgb(129, 12, 77);
+    padding: 40px;
+    margin: 40px;
+    width: 50px;
+    height: 30px;
+  }
+
+
+  .b5 {
+      width: 20px;
+      height: 10px;
+      border: 2px solid;
+      background-color: red;
+  }
