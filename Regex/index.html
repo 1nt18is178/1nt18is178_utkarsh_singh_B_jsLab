@@ -1,0 +1,31 @@
+<!--Utkarsh Singh, 1NT18IS178 -->
+<!--form creatiom using regular expressions-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="DOMS.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form name="formvalid" method="post" onsubmit="regEx(); return false">
+      First Name: <input type="text" id="fname" name="fname" /> <br />
+      Last Name: <input type="text" id="lname" name="lname" /> <br />
+      Phone Number: <input type="number" id="phno" name="phno" /> <br />
+      USN: <input type="text" id="usn" name="usn" /> <br />
+
+      <button id="btn">Submit</button>
+    </form>
+    <div>
+      <h1>First Name: <span id="fnameop"> </span></h1>
+      <h1>Last Name: <span id="lnameop"> </span></h1>
+      <h1>Phone Number: <span id="phnoop"> </span></h1>
+      <h1>USN: <span id="usnop"> </span></h1>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="form.js"></script>
+</html>
