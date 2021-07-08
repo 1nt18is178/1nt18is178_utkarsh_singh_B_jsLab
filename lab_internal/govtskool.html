@@ -1,0 +1,81 @@
+<!--UTKARSH SINGH-->
+<!--1NT18IS178-->
+<!--User will enter the valid school id and id,name of the school, ratings and the image of the school will be displayed-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div
+    style="border: aqua; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: burlywood;">
+    <h1>Karnataka govt. School Details</h1>
+    <input type="text" id="skool" placeholder="enter school ID">
+    <button onclick="myfunc()">search</button>
+    <br>
+    <p id="demo"></p>
+</div>
+<script>
+    function myfunc() {
+        const govtskool = [
+            {
+                "id": "100",
+                "District": "Bangalore",
+                "school_name": "K.V.,AFS,yelahanka",
+                "ratings": "4.8",
+                "img": `<img src = 'https://i.ytimg.com/vi/JSakZ-VUg8o/mqdefault.jpg' width="400">`
+            },
+            {
+                "id": "200",
+                "District": "Belgavi",
+                "school_name": "Saraswati vidya mandir",
+                "ratings": "4.4",
+                "img": `<img src = 'http://schools.thelearningpoint.net/pics-cbse/schoolPic08655.JPG' width="400">`
+            },
+            {
+                "id": "300",
+                "District": "yelahanka",
+                "school_name": "Yedurappa convent school",
+                "ratings": "3.2",
+                "img": `<img src = 'https://upload.wikimedia.org/wikipedia/commons/7/72/Christ_Jyoti_Convent_School%2C_Sultanpur_Lodhi.jpg' width="400">`
+            },
+            {
+                "id": "400",
+                "District": "dodballapur",
+                "school_name": "Sheshadripuram govt. college",
+                "ratings": "4.4",
+                "img": `<img src = 'https://www.galaxyeduworld.com/storage/college_page/5dc3e40d92895_1.jpg' width="400">`
+            },
+            {
+                "id": "500",
+                "District": "rajajinagar",
+                "school_name": "Kidzee skool",
+                "ratings": "3.8",
+                "img": `<img src = 'https://cache.careers360.mobi/media/schools/social-media/media-gallery/8587/2019/7/29/Sri%20Chaitanya%20Techno%20School-Campus-View.png' width="400">`
+            },
+            {
+                "id": "600",
+                "District": "jelahalli",
+                "school_name": "Chacha nehru govt. skool",
+                "ratings": "3.4",
+                "img": `<img src = 'https://i.ytimg.com/vi/JSakZ-VUg8o/mqdefault.jpg' width="400">`
+            }
+        ]
+        let y = document.getElementById("skool").value;
+        let x = govtskool.find(govtskool => govtskool.id === y);
+        if (x == undefined) {
+            document.getElementById("demo").innerHTML = "enter valid id";
+            document.getElementById("demo").style.backgroundColor = "burlywood";
+        }
+        else {
+            let z = "ID: " + x.id + "<br> " + "District " + x.District + " " + "<br>" + "school : " + x.school_name + " " + "<br>" + "rating : " + x.ratings + "<br>" + "image : " + x.img;
+            document.getElementById("demo").innerHTML = z;
+        }
+    }
+</script>
+
+</body>
+</html>
